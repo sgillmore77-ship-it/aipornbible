@@ -1,8 +1,11 @@
+import "./globals.css";
 import Link from "next/link";
 import { Container } from "@/components/ui";
+import { SiteChrome } from "@/components/SiteChrome";
 
 export default function NotFound() {
   return (
+    <SiteChrome>
     <Container className="py-24 lg:py-32">
       <p className="text-[13px] font-bold uppercase tracking-[0.06em] text-red">404</p>
       <h1 className="display mt-3 text-[44px] lg:text-[72px]">Page not found</h1>
@@ -12,5 +15,6 @@ export default function NotFound() {
         <Link href="/" className="inline-flex h-12 items-center rounded-[8px] border border-rule px-6 text-[16px] font-semibold hover:border-ink">Home</Link>
       </div>
     </Container>
+    </SiteChrome>
   );
 }

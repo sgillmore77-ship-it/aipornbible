@@ -1,14 +1,9 @@
-import { categories } from "@/content/categories";
-import { platforms } from "@/content/platforms";
-import { articles } from "@/content/articles";
+/** Server-side content queries. Never import this from a client component. */
+import { articles, categories, platforms } from "@/lib/content";
 import type { Article, ArticleKind, Platform } from "./types";
 
-export const SITE = {
-  name: "AI Porn Bible",
-  tagline: "The AI Porn Directory & Industry Guide",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://aipornbible.com").replace(/\/$/, ""),
-  contactEmail: "hello@aipornbible.com",
-};
+export { SITE } from "./site";
+export { formatDate, formatMonth, outboundHref, outboundRel } from "./format";
 
 export const publishedPlatforms = (): Platform[] => platforms.filter((p) => p.status === "published");
 export const getPlatform = (slug: string) => publishedPlatforms().find((p) => p.slug === slug);
@@ -44,9 +39,6 @@ export const hasFeature = (p: Platform, key: string) => p.features.some((f) => f
 export const isIndexablePlatform = (p: Platform) => !p.isSample && p.status === "published";
 export const isIndexableCategory = (slug: string) => platformsInCategory(slug).some(isIndexablePlatform);
 
-export const outboundHref = (p: Platform) => `/go/${p.slug}/`;
-export const outboundRel = (p: Platform) =>
-  p.commercial.sponsored || p.commercial.affiliateActive ? "sponsored nofollow noopener" : "nofollow noopener";
 
 export const resolveOutboundUrl = (p: Platform): string => {
   const base = p.commercial.affiliateActive && p.commercial.affiliateUrl ? p.commercial.affiliateUrl : p.websiteUrl;
@@ -56,10 +48,6 @@ export const resolveOutboundUrl = (p: Platform): string => {
   return u.toString();
 };
 
-export const formatDate = (iso: string) =>
-  new Date(iso + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
-export const formatMonth = (iso: string) =>
-  new Date(iso + "T00:00:00Z").toLocaleDateString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" });
 
 export const articlePath = (a: Article) => {
   const base = { review: "reviews", comparison: "comparisons", guide: "guides", news: "news" }[a.kind];

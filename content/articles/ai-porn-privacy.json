@@ -1,0 +1,36 @@
+{
+  "title": "Staying private on AI porn and sex chat sites",
+  "kind": "guide",
+  "status": "published",
+  "isSample": false,
+  "description": "What these platforms can know about you, and the practical steps that reduce your exposure.",
+  "publishedOn": "2026-11-02",
+  "updatedOn": "2026-11-02",
+  "author": "AI Porn Bible Editorial",
+  "authorRole": "",
+  "category": "ai-sex-chat",
+  "basis": "",
+  "sponsored": false,
+  "platforms": [],
+  "winners": [],
+  "sections": [
+    {
+      "heading": "What a platform can see",
+      "platform": null,
+      "body": "An AI platform sees everything you type and generate. Companion apps in particular store long conversation histories, which can be among the most personal data you hand to any service. Payment details, email addresses and device information add to that picture.",
+      "list": []
+    },
+    {
+      "heading": "Questions to ask",
+      "platform": null,
+      "body": "Does the platform say whether your chats or images are used to train its models? Can you delete your history, and does deletion actually remove it? Where is the company based, and which data protection law applies? How does the charge appear on your bank statement?\n\nIf a privacy policy doesn't answer these questions clearly, treat that as an answer in itself.",
+      "list": []
+    },
+    {
+      "heading": "Practical steps",
+      "platform": null,
+      "body": "Use a separate email address. Avoid sharing identifying details about yourself or anyone else in chats. Turn on two-factor authentication where offered. Check whether a platform offers a discreet billing descriptor, and periodically delete history you don't need to keep.\n\nNever upload photos of real people to generate sexual imagery. Beyond being harmful, creating sexually explicit deepfakes of real people is a criminal offence in the UK and many other places.",
+      "list": []
+    }
+  ]
+}

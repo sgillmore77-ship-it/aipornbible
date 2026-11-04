@@ -60,6 +60,8 @@ export interface Platform {
   shortDescription: string;
   primaryCategory: string;
   categories: string[];
+  /** Category slug → name, filled in by the content loader (lets cards render without content lookups). */
+  catNames?: Record<string, string>;
   platformType: PlatformType;
   pricingModel: PricingModel;
   /** Display tags shown on cards (2–3 short phrases). */

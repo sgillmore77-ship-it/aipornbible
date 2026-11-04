@@ -1,0 +1,164 @@
+{
+  "name": "Darkroom Kit",
+  "status": "published",
+  "isSample": true,
+  "websiteUrl": "https://example.com/darkroom-kit",
+  "shortDescription": "Desktop toolkit for upscaling, batch inpainting and consent-checked creator likeness training.",
+  "primaryCategory": "ai-porn-creator-tools",
+  "categories": [
+    "ai-porn-creator-tools"
+  ],
+  "platformType": "desktop",
+  "pricingModel": "paid",
+  "tags": [
+    "Upscale",
+    "Inpainting",
+    "Batch"
+  ],
+  "bestFor": "",
+  "logo": null,
+  "initials": "Dk",
+  "hue": 232,
+  "dateAdded": "2026-07-26",
+  "lastUpdated": "2026-09-18",
+  "features": [
+    {
+      "key": "free-tier",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "no-signup",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "unfiltered",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "memory",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "voice",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "native-app",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "crypto",
+      "label": "",
+      "value": "yes",
+      "unverified": false
+    }
+  ],
+  "glance": {
+    "price": {
+      "value": "$19/mo",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "freeAccess": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "payment": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "devices": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "account": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "billingName": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "trainingOnChats": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "ageVerification": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "allowedContent": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "prohibitedContent": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04",
+    "checkedBy": "Sample data"
+  },
+  "editorial": {
+    "discriminant": true,
+    "value": {
+      "rating": 7.9,
+      "subScores": [],
+      "basis": "research",
+      "reviewer": "Sample reviewer",
+      "lastChecked": "2026-09-18",
+      "about": "Desktop toolkit for upscaling, batch inpainting and consent-checked creator likeness training. This is a sample listing: real profiles describe the platform in two or three paragraphs.",
+      "pros": [
+        "Upscale",
+        "Inpainting"
+      ],
+      "cons": [
+        "Sample listing: replace with real findings"
+      ],
+      "assessment": "Sample assessment. Real assessments explain who the platform suits, who it doesn't, and why.",
+      "verdict": ""
+    }
+  },
+  "commercial": {
+    "sponsored": false,
+    "sponsoredFrom": null,
+    "sponsoredUntil": null,
+    "editorsPick": false,
+    "featuredOnHome": false,
+    "featuredInCategories": [],
+    "affiliateActive": false,
+    "affiliateUrl": null,
+    "trackingParams": []
+  }
+}

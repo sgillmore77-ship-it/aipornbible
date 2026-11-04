@@ -1,0 +1,22 @@
+{
+  "title": "Editorial Policy",
+  "description": "How AI Porn Bible chooses, verifies and rates the platforms in its directory.",
+  "sections": [
+    {
+      "heading": "How listings are verified",
+      "body": "Every fact on a listing (features, pricing, devices, privacy terms) is either verified with a date, marked Unverified when it comes only from the platform's own marketing, or marked Not yet verified. We don't fill gaps with guesses."
+    },
+    {
+      "heading": "Ratings and reviews",
+      "body": "Ratings are out of 10 and only appear when a platform has genuinely been assessed. Every rating and review says whether it comes from hands-on testing or from research. We never claim to have tested something we haven't."
+    },
+    {
+      "heading": "Editor's picks and popularity",
+      "body": "Editor's picks are chosen by our editors and can't be bought. Until we have enough real visitor data to rank by popularity, the homepage shows editor's picks rather than invented popularity figures."
+    },
+    {
+      "heading": "Money and independence",
+      "body": "We earn money from affiliate links and sponsored placements. Sponsored placements are always labelled. Neither affects ratings, and platforms can't pay to remove a negative review."
+    }
+  ]
+}

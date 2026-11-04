@@ -2,10 +2,10 @@
  * Runs before every build (`npm run build`) and on demand (`npm run validate`).
  * Fails the build if published content is incomplete or breaks the content policy.
  */
-import { categories } from "../src/content/categories";
-import { platforms } from "../src/content/platforms";
-import { articles } from "../src/content/articles";
-import { pages } from "../src/content/pages";
+import { categories } from "../src/lib/content";
+import { platforms } from "../src/lib/content";
+import { articles } from "../src/lib/content";
+import { pages } from "../src/lib/content";
 
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -17,7 +17,7 @@ const pageSlugs = new Set(pages.map((p) => p.slug));
 const dupes = (xs: string[]) => xs.filter((x, i) => xs.indexOf(x) !== i);
 for (const d of dupes(categories.map((c) => c.slug))) errors.push(`Duplicate category slug: ${d}`);
 for (const d of dupes(platforms.map((p) => p.slug))) errors.push(`Duplicate platform slug: ${d}`);
-for (const s of pageSlugs) if (["directory", "categories", "reviews", "comparisons", "guides", "news", "go"].includes(s)) errors.push(`Page slug "${s}" clashes with a site route.`);
+for (const s of pageSlugs) if (["directory", "categories", "category", "platform", "reviews", "comparisons", "guides", "news", "go", "keystatic", "api"].includes(s)) errors.push(`Page slug "${s}" clashes with a site route.`);
 
 for (const c of categories) {
   if (c.status !== "published") continue;

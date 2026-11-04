@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SITE } from "@/lib/data";
+import { SITE } from "@/lib/site";
 import type { Fact } from "@/lib/types";
 
 export function Container({ children, className = "" }: { children: React.ReactNode; className?: string }) {

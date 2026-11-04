@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { PlatformCard, VisitLink } from "./PlatformCard";
 import { Toc } from "./Toc";
 import { Breadcrumbs, Container, JsonLd, PricingTag, SampleNotice, SponsoredLabel, Tag, Tile, TypeTag } from "./ui";
-import { getCategory } from "@/content/categories";
+import { getCategory } from "@/lib/content";
 import { SITE, articlePath, categoryName, formatDate, getArticle, getPlatform, outboundHref, outboundRel, publishedArticles, readMinutes } from "@/lib/data";
 import { PRICING_LABELS } from "@/lib/labels";
 import type { ArticleKind, Platform } from "@/lib/types";

@@ -1,6 +1,6 @@
 # AI Porn Bible
 
-The AI porn directory. Next.js 15 (App Router) + TypeScript + Tailwind CSS 4. Every page is statically generated; the only server code is the `/go/[slug]/` outbound redirect.
+The AI porn directory. Next.js 15 (App Router) + TypeScript + Tailwind CSS 4, with a Keystatic admin dashboard at `/keystatic`. Every public page is pre-built static HTML: content is read once at build time, never per request. Outbound `/go/<slug>/` links are compiled into edge redirects.
 
 ## Run it
 
@@ -16,30 +16,51 @@ Node 20+ required.
 
 1. Push this folder to a GitHub repo.
 2. In Vercel: **Add New → Project → Import** the repo. The defaults are right (framework: Next.js, build: `npm run build`).
-3. Add the environment variable `NEXT_PUBLIC_SITE_URL=https://aipornbible.com`.
+3. Add the environment variable `NEXT_PUBLIC_SITE_URL=https://www.aipornbible.com` (the address the site is served on).
 4. Add the domain under **Settings → Domains**.
 5. Turn on **Analytics** in the project dashboard (cookieless page views, already wired in).
 
 Or from the terminal: `npx vercel` then `npx vercel --prod`.
 
-**Moving off Vercel later:** it's a standard Next.js app, so it runs on Netlify, Cloudflare (via OpenNext), Railway or any Node host with `npm run build && npm start`. Swap `@vercel/analytics` for Plausible, Umami or similar.
+**Moving off Vercel later:** it's a standard Next.js app, so it runs on Netlify, Cloudflare (via OpenNext), Railway or any Node host with `npm run build && npm start`. Swap `@vercel/analytics` for Plausible, Umami or similar, and replace the `/go/` redirects in `next.config.ts` with that host's equivalent if it doesn't support Next.js redirects.
 
 ## Adding and editing content
 
-All content is typed data in `src/content/`:
+### The dashboard (recommended)
 
-| File | What |
-| --- | --- |
-| `platforms.ts` | Directory listings |
-| `categories.ts` | Categories and their intro copy |
-| `articles.ts` | Reviews, comparisons, guides, news |
-| `pages.ts` | About, contact, advertising and policy pages |
+Go to **https://www.aipornbible.com/keystatic** and sign in. There are forms for:
 
-To add a platform, copy an entry in `platforms.ts`, set `status: "published"`, remove `isSample`, and run `npm run validate`.
+- **Platforms**: every listing field, including features, pricing, the content policy check, rating and pros/cons, and sponsorship and affiliate settings
+- **Categories**: name, intro copy, order and related categories
+- **Articles**: reviews, comparisons, guides and news, built from sections
+- **Info & policy pages**
+
+Clicking **Save** commits the change to GitHub. Vercel rebuilds and the change is live in about a minute. Set **Status** to Draft while you work; only Published content appears on the site.
+
+In long text boxes, separate paragraphs with a blank line.
+
+#### One-time setup (Keystatic Cloud, free for up to 3 users)
+
+1. Go to keystatic.cloud and sign in with GitHub.
+2. Create a team, then a project, and connect it to this GitHub repository.
+3. Copy the project ID shown in the project settings (it looks like `your-team/aipornbible`).
+4. In Vercel → Settings → Environment Variables, add `NEXT_PUBLIC_KEYSTATIC_CLOUD_PROJECT` with that ID, then redeploy.
+
+Until step 4 is done, `/keystatic` shows a "not connected" message and nothing can be edited.
+
+### Editing locally
+
+`npm run dev`, then open http://localhost:3000/keystatic. Locally, the dashboard writes straight to the files on disk.
+
+### Where content lives
+
+Everything is JSON in `content/`, one file per item: `content/platforms/<slug>.json`, `content/categories/`, `content/articles/`, `content/pages/`. The filename is the URL slug. `src/lib/content.ts` loads these at build time.
+
+`npm run check:dashboard` confirms every file still matches the dashboard schema in `keystatic.config.tsx`.
 
 ### Rules the build enforces
 
-`npm run build` runs `scripts/validate-content.ts` first and **fails** if a published listing:
+`npm run build` runs `scripts/validate-content.ts` first, so a broken save can't take the site down. It **fails** the deploy (the live site stays on the previous version) if a published listing:
 
 - is missing required fields (URL, descriptions, category, type, pricing model, dates)
 - references an unknown category or platform
@@ -55,15 +76,11 @@ To add a platform, copy an entry in `platforms.ts`, set `status: "published"`, r
 
 ### Verified data
 
-Every factual field is a `Fact`, or left out when unknown:
+Every fact on a listing (price, payment, devices and so on) has three states:
 
-```ts
-glance: {
-  price: { value: "From $9.99/mo", checkedOn: "2026-11-03" },   // verified
-  payment: { value: "Card, crypto", unverified: true },         // shows an "Unverified" tag
-  // billingName omitted                                        // shows "Not yet verified"
-}
-```
+- **Value plus a "checked on" date**: verified.
+- **Value with "Unverified" ticked**: shows an Unverified tag. Use it for things that only come from the platform's own marketing.
+- **Empty**: shows "Not yet verified".
 
 ## Design system
 
@@ -88,15 +105,14 @@ Key components: `PlatformCard` (`grid` / `row` / `mini`), `SearchBox`, `Director
 
 ## Before launch
 
-- [ ] Replace the 19 sample listings in `platforms.ts` with researched platforms (target 30–50). `nocturne` is the fully filled-in example of every field.
-- [ ] Replace the sample review and comparison in `articles.ts`
+- [ ] Replace the 19 sample listings with researched platforms (target 30–50). Nocturne is the fully filled-in example of every field.
+- [ ] Replace the sample review and comparison
 - [ ] Change `checkedBy` and the review copy if you don't actually do hands-on testing: several sample texts claim it
-- [ ] Set up `hello@` and `ads@` mailboxes, or change the addresses in `src/content/pages.ts` and `src/lib/data.ts`
-- [ ] Have a lawyer review the privacy policy and terms in `src/content/pages.ts`
-- [ ] Add platform logos to `public/logos/` and set `logo: "/logos/name.svg"`
+- [ ] Set up `hello@` and `ads@` mailboxes, or change the addresses in the info pages and `src/lib/site.ts`
+- [ ] Have a lawyer review the privacy policy and terms
+- [ ] Upload platform logos (Logo field on each platform)
 
 ## Next phase
 
-- **Admin UI:** add [Keystatic](https://keystatic.com) (git-based CMS). It edits the same content files through a web UI, so no database or rebuild of the site is needed.
 - **Real popularity:** log `/go/` clicks (Vercel Analytics custom events or a small KV counter) and switch the homepage "Editor's picks" row to "Most popular" once there is data.
 - **Scale:** past ~300 listings, move content to JSON files or Supabase and paginate the directory.

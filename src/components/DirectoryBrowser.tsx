@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { PlatformCard } from "./PlatformCard";
 import { Magnifier } from "./SearchBox";
@@ -80,18 +79,17 @@ export function DirectoryBrowser({ platforms, categories, lockedCategory, mode =
   lockedCategory?: string;
   mode?: "sidebar" | "chips";
 }) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const params = useSearchParams();
   const [s, setS] = useState<Filters>(EMPTY);
   const [shown, setShown] = useState(mode === "chips" ? 8 : PAGE);
   const [sheet, setSheet] = useState(false);
   const [view, setView] = useState<"grid" | "list">("grid");
   const [mobileAll, setMobileAll] = useState(false);
 
-  // Read state from the URL once on load (shareable filtered URLs).
+  // Apply filters from the URL after load (shareable filtered URLs). The server
+  // always renders the full, unfiltered list, so every listing is in the HTML.
   useEffect(() => {
-    if (!params) return;
+    const params = new URLSearchParams(window.location.search);
+    if (![...params.keys()].length) return;
     const sort = params.get("sort") as SortKey | null;
     setS({
       q: params.get("q") ?? "",
@@ -116,7 +114,7 @@ export function DirectoryBrowser({ platforms, categories, lockedCategory, mode =
     if (n.f.length) qp.set("f", n.f.join(","));
     if (n.sort !== "featured") qp.set("sort", n.sort);
     const qs = qp.toString();
-    router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+    window.history.replaceState(null, "", qs ? `${window.location.pathname}?${qs}` : window.location.pathname);
   };
 
   const results = useMemo(() => platforms.filter((p) => matches(p, s, lockedCategory)).sort(SORT_FNS[s.sort]), [platforms, s, lockedCategory]);

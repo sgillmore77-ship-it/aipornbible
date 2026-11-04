@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { pages } from "@/content/pages";
+import { pages } from "@/lib/content";
 import { SITE, articlePath, isIndexableCategory, isIndexablePlatform, publishedArticles, publishedCategories, publishedPlatforms } from "@/lib/data";
 
 /** Only indexable pages go in the sitemap: no samples, no empty categories. */

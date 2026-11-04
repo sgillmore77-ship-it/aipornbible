@@ -1,0 +1,132 @@
+{
+  "name": "Midnight Ink",
+  "status": "published",
+  "isSample": true,
+  "websiteUrl": "https://example.com/midnight-ink",
+  "shortDescription": "Anonymous, account-free sex chat with a fast, no-frills text interface.",
+  "primaryCategory": "ai-sex-chat",
+  "categories": [
+    "ai-sex-chat"
+  ],
+  "platformType": "web",
+  "pricingModel": "free",
+  "tags": [
+    "No signup",
+    "Unfiltered"
+  ],
+  "bestFor": "Anonymous, free chat",
+  "initials": "Mi",
+  "hue": 250,
+  "dateAdded": "2026-10-25",
+  "lastUpdated": "2026-10-29",
+  "features": [
+    {
+      "key": "free-tier",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "no-signup",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "unfiltered",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "memory",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "voice",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "native-app",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "crypto",
+      "value": "unknown",
+      "unverified": false
+    }
+  ],
+  "glance": {
+    "price": {
+      "value": "Free",
+      "unverified": false
+    },
+    "freeAccess": {
+      "value": "Fully free",
+      "unverified": false
+    },
+    "payment": {
+      "unverified": false
+    },
+    "devices": {
+      "value": "Web",
+      "unverified": false
+    },
+    "account": {
+      "unverified": false
+    },
+    "billingName": {
+      "unverified": false
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "unverified": false
+    },
+    "trainingOnChats": {
+      "unverified": false
+    },
+    "ageVerification": {
+      "unverified": false
+    },
+    "allowedContent": {
+      "unverified": false
+    },
+    "prohibitedContent": {
+      "unverified": false
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04",
+    "checkedBy": "Sample data"
+  },
+  "editorial": {
+    "discriminant": true,
+    "value": {
+      "rating": 7.2,
+      "subScores": [],
+      "basis": "research",
+      "reviewer": "Sample reviewer",
+      "lastChecked": "2026-10-29",
+      "about": "Anonymous, account-free sex chat with a fast, no-frills text interface. This is a sample listing: real profiles describe the platform in two or three paragraphs.",
+      "pros": [
+        "No signup",
+        "Unfiltered"
+      ],
+      "cons": [
+        "Sample listing: replace with real findings"
+      ],
+      "assessment": "Sample assessment. Real assessments explain who the platform suits, who it doesn't, and why."
+    }
+  },
+  "commercial": {
+    "sponsored": false,
+    "editorsPick": false,
+    "featuredOnHome": false,
+    "featuredInCategories": [],
+    "affiliateActive": false,
+    "trackingParams": []
+  }
+}

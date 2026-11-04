@@ -1,0 +1,42 @@
+{
+  "title": "How AI porn generators work",
+  "kind": "guide",
+  "status": "published",
+  "isSample": false,
+  "description": "A plain-English explanation of diffusion models, prompts, seeds and why the same prompt gives different results.",
+  "publishedOn": "2026-11-01",
+  "updatedOn": "2026-11-01",
+  "author": "AI Porn Bible Editorial",
+  "authorRole": "",
+  "category": "ai-porn-generators",
+  "basis": "",
+  "sponsored": false,
+  "platforms": [],
+  "winners": [],
+  "sections": [
+    {
+      "heading": "The short version",
+      "platform": null,
+      "body": "Most AI image generators use diffusion models. During training, a model is shown millions of images with noise gradually added, and learns to reverse that process. When you generate an image, it starts from pure random noise and removes it step by step, steered towards whatever your prompt describes.",
+      "list": []
+    },
+    {
+      "heading": "Prompts, seeds and steps",
+      "platform": null,
+      "body": "Your prompt is converted into a numerical representation that guides each denoising step. The seed decides the starting noise, which is why the same prompt with a different seed produces a different image, and the same prompt with the same seed reproduces it.\n\nSteps control how many denoising passes the model makes. More steps can add detail but take longer and cost more. Guidance (sometimes called CFG) controls how strictly the model follows the prompt versus producing something more natural-looking.",
+      "list": []
+    },
+    {
+      "heading": "Why platforms differ",
+      "platform": null,
+      "body": "Platforms differ in the base model they run, any fine-tuning on top of it, and the tools around it: character consistency, inpainting to fix parts of an image, upscaling, and saved styles. Two services built on similar models can feel very different because of those tools and their default settings.\n\nAI porn platforms usually fine-tune open models or train their own. That is why quality, anatomy accuracy and style range vary so much across the directory.",
+      "list": []
+    },
+    {
+      "heading": "What to check before you pay",
+      "platform": null,
+      "body": "Look at whether failed or unwanted generations still use credits, whether you can keep a character consistent across images, who owns the output, and what happens to your prompts and images after you create them. Our platform profiles record these details where we have been able to verify them.",
+      "list": []
+    }
+  ]
+}

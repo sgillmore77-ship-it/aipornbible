@@ -1,0 +1,227 @@
+{
+  "name": "Nocturne",
+  "status": "published",
+  "isSample": true,
+  "websiteUrl": "https://example.com/nocturne",
+  "shortDescription": "Uncensored roleplay with long-term memory and a huge library of community scenarios.",
+  "primaryCategory": "ai-sex-chat",
+  "categories": [
+    "ai-sex-chat",
+    "nsfw-ai-characters"
+  ],
+  "platformType": "web",
+  "pricingModel": "freemium",
+  "tags": [
+    "Unfiltered",
+    "Long memory",
+    "Group scenes"
+  ],
+  "bestFor": "Long-form roleplay",
+  "logo": null,
+  "initials": "No",
+  "hue": 275,
+  "dateAdded": "2025-01-14",
+  "lastUpdated": "2026-10-28",
+  "features": [
+    {
+      "key": "unfiltered",
+      "label": "Unfiltered adult roleplay",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "memory",
+      "label": "Long-term memory",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "custom",
+      "label": "Custom character builder",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "custom",
+      "label": "Group / multi-character scenes",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "custom",
+      "label": "Image generation in chat",
+      "value": "yes",
+      "unverified": true
+    },
+    {
+      "key": "voice",
+      "label": "Voice messages",
+      "value": "no",
+      "unverified": false
+    },
+    {
+      "key": "native-app",
+      "label": "Native mobile app",
+      "value": "no",
+      "unverified": false
+    },
+    {
+      "key": "free-tier",
+      "label": "Free tier",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "custom",
+      "label": "Chat history deletion",
+      "value": "yes",
+      "unverified": true
+    },
+    {
+      "key": "custom",
+      "label": "End-to-end encryption",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "custom",
+      "label": "Opt out of model training",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "crypto",
+      "label": "Crypto payments",
+      "value": "yes",
+      "unverified": true
+    },
+    {
+      "key": "no-signup",
+      "label": "",
+      "value": "no",
+      "unverified": false
+    }
+  ],
+  "glance": {
+    "price": {
+      "value": "Free · Premium $9.99/mo · Ultra $24.99/mo",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "freeAccess": {
+      "value": "Free tier, 50 messages/day",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "payment": {
+      "value": "Card, crypto",
+      "unverified": true,
+      "checkedOn": null
+    },
+    "devices": {
+      "value": "Web, iOS and Android via browser",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "account": {
+      "value": "Yes, email only",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "billingName": {
+      "value": "Discreet (“NCT Digital”)",
+      "unverified": true,
+      "checkedOn": null
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "value": "Chats are stored until you delete them. Account deletion removes history within 30 days (per policy).",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "trainingOnChats": {
+      "value": "Not stated. Support did not answer our question.",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "ageVerification": {
+      "value": "Self-declared 18+ at sign-up.",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "allowedContent": {
+      "value": "Explicit content between fictional adult characters.",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "prohibitedContent": {
+      "value": "Minors or youthful characters, real identifiable people, non-consent outside fiction framing.",
+      "unverified": false,
+      "checkedOn": null
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04",
+    "checkedBy": "Sample data"
+  },
+  "editorial": {
+    "discriminant": true,
+    "value": {
+      "rating": 9.1,
+      "subScores": [
+        {
+          "label": "Roleplay",
+          "value": 9.5
+        },
+        {
+          "label": "Memory",
+          "value": 9
+        },
+        {
+          "label": "Freedom",
+          "value": 9.2
+        },
+        {
+          "label": "Value",
+          "value": 8.8
+        },
+        {
+          "label": "Privacy",
+          "value": 7.6
+        }
+      ],
+      "basis": "hands-on",
+      "reviewer": "Mara Quill",
+      "lastChecked": "2026-10-28",
+      "about": "Nocturne is a browser-based AI sex chat platform built around long-form roleplay. You can start from a blank prompt, pick one of roughly 60,000 community-written scenarios, or build a character with its own personality, limits and backstory.\n\nIts standout feature is memory: characters recall names, preferences and past scenes across weeks, not just within a session. The free tier is usable rather than a teaser, and Premium removes the daily cap.",
+      "pros": [
+        "Memory holds across weeks of chats",
+        "Largest scenario library we have tested",
+        "Usable free tier, not a teaser",
+        "Rarely breaks character"
+      ],
+      "cons": [
+        "No voice messages or calls",
+        "Images cost extra credits",
+        "No native app, browser only",
+        "Vague on training use of chats"
+      ],
+      "assessment": "Over three weeks of testing, Nocturne kept characters consistent better than anything else we tried. It held a multi-character storyline across 40+ sessions with only minor slips, and it rarely broke character to lecture. Image generation works but is clearly bolted on, and costs extra credits.\n\nThe main weakness is privacy transparency. Chat deletion works, but the policy is vague on whether conversations are used for training, and we couldn't get a straight answer from support.",
+      "verdict": "The best place to start if you want long, coherent roleplay. Pay for Premium only once you hit the daily cap."
+    }
+  },
+  "commercial": {
+    "sponsored": false,
+    "sponsoredFrom": null,
+    "sponsoredUntil": null,
+    "editorsPick": true,
+    "featuredOnHome": false,
+    "featuredInCategories": [],
+    "affiliateActive": false,
+    "affiliateUrl": null,
+    "trackingParams": []
+  }
+}

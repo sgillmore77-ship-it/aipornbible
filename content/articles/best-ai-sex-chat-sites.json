@@ -1,0 +1,81 @@
+{
+  "title": "Best AI Sex Chat Sites in 2026: 6 Platforms Tested",
+  "kind": "comparison",
+  "status": "published",
+  "isSample": true,
+  "description": "We paid for every plan, ran the same 40 scenarios on each, and scored memory, freedom, value and privacy.",
+  "publishedOn": "2026-11-01",
+  "updatedOn": "2026-11-01",
+  "author": "Mara Quill",
+  "authorRole": "senior reviewer",
+  "category": "ai-sex-chat",
+  "basis": "",
+  "sponsored": false,
+  "platforms": [
+    "nocturne",
+    "whisperline",
+    "candlelight",
+    "velour-chat",
+    "midnight-ink",
+    "the-parlour"
+  ],
+  "winners": [
+    {
+      "label": "Best overall",
+      "platform": "nocturne"
+    },
+    {
+      "label": "Best free",
+      "platform": "midnight-ink"
+    },
+    {
+      "label": "Best for characters",
+      "platform": "candlelight"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "How we tested",
+      "platform": null,
+      "body": "Each platform got a paid account bought with our own money and the same battery of 40 scenarios: short scenes, multi-day storylines, group roleplay and deliberate attempts to make the character forget. We logged every refusal, every lapse in memory and every upsell prompt.\n\nScores are weighted: memory 30%, freedom 25%, writing quality 20%, value 15%, privacy 10%. Sponsored platforms go through the identical process and receive no adjustment.",
+      "list": []
+    },
+    {
+      "heading": "1. Nocturne: best overall",
+      "platform": "nocturne",
+      "body": "Nocturne held a four-character storyline across 40+ sessions with only minor slips, the best memory result in this test by a wide margin. It almost never breaks character to moralise, and its community scenario library means you rarely start from a blank page.\n\nIt loses points on privacy: the policy doesn't say whether chats are used for training, and support didn't answer when we asked. Voice is absent entirely.",
+      "list": []
+    },
+    {
+      "heading": "2. Whisperline: best for chat with images",
+      "platform": "whisperline",
+      "body": "Whisperline is the most polished interface here, and the only one where generated images arrive mid-conversation without breaking the flow. Memory is good for a week or so, then starts to blur details.",
+      "list": []
+    },
+    {
+      "heading": "3. Candlelight: best for characters",
+      "platform": "candlelight",
+      "body": "Sample section. Candlelight's character builder and 40,000+ community personas make it the best pick if you'd rather choose a character than write one.",
+      "list": []
+    },
+    {
+      "heading": "What to look for",
+      "platform": null,
+      "body": "",
+      "list": [
+        {
+          "title": "Real memory, not a long context window.",
+          "body": "Ask about something from three days ago."
+        },
+        {
+          "title": "Cost per message after the free tier.",
+          "body": "Credit systems hide this; we calculate it for you."
+        },
+        {
+          "title": "A deletion button that actually deletes.",
+          "body": "Check the policy, not the marketing page."
+        }
+      ]
+    }
+  ]
+}

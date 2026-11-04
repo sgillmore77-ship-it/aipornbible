@@ -1,0 +1,163 @@
+{
+  "name": "Siren Voice",
+  "status": "published",
+  "isSample": true,
+  "websiteUrl": "https://example.com/siren-voice",
+  "shortDescription": "Real-time erotic voice calls with a choice of 30+ voices and adjustable pacing.",
+  "primaryCategory": "ai-sex-voice-audio",
+  "categories": [
+    "ai-sex-voice-audio"
+  ],
+  "platformType": "mobile",
+  "pricingModel": "freemium",
+  "tags": [
+    "Live calls",
+    "Custom voices"
+  ],
+  "bestFor": "",
+  "logo": null,
+  "initials": "Sv",
+  "hue": 205,
+  "dateAdded": "2026-09-14",
+  "lastUpdated": "2026-09-28",
+  "features": [
+    {
+      "key": "free-tier",
+      "label": "",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "no-signup",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "unfiltered",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "memory",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "voice",
+      "label": "",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "native-app",
+      "label": "",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "crypto",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    }
+  ],
+  "glance": {
+    "price": {
+      "value": "Free · $11/mo",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "freeAccess": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "payment": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "devices": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "account": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "billingName": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "trainingOnChats": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "ageVerification": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "allowedContent": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "prohibitedContent": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04",
+    "checkedBy": "Sample data"
+  },
+  "editorial": {
+    "discriminant": true,
+    "value": {
+      "rating": 7.4,
+      "subScores": [],
+      "basis": "research",
+      "reviewer": "Sample reviewer",
+      "lastChecked": "2026-09-28",
+      "about": "Real-time erotic voice calls with a choice of 30+ voices and adjustable pacing. This is a sample listing: real profiles describe the platform in two or three paragraphs.",
+      "pros": [
+        "Live calls",
+        "Custom voices"
+      ],
+      "cons": [
+        "Sample listing: replace with real findings"
+      ],
+      "assessment": "Sample assessment. Real assessments explain who the platform suits, who it doesn't, and why.",
+      "verdict": ""
+    }
+  },
+  "commercial": {
+    "sponsored": false,
+    "sponsoredFrom": null,
+    "sponsoredUntil": null,
+    "editorsPick": false,
+    "featuredOnHome": false,
+    "featuredInCategories": [],
+    "affiliateActive": false,
+    "affiliateUrl": null,
+    "trackingParams": []
+  }
+}

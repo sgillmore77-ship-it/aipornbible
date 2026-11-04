@@ -1,0 +1,30 @@
+{
+  "title": "Welcome to AI Porn Bible",
+  "kind": "news",
+  "status": "published",
+  "isSample": false,
+  "description": "What this directory is, how listings are chosen, and how we keep editorial and commercial decisions separate.",
+  "publishedOn": "2026-11-03",
+  "updatedOn": "2026-11-03",
+  "author": "AI Porn Bible Editorial",
+  "authorRole": "",
+  "category": null,
+  "basis": "",
+  "sponsored": false,
+  "platforms": [],
+  "winners": [],
+  "sections": [
+    {
+      "heading": "What we're building",
+      "platform": null,
+      "body": "AI Porn Bible is the directory for AI porn: generators, AI porn video, sex chat, AI girlfriends, NSFW characters, voice and creator tools. We don't host porn ourselves. We review, compare and link to the platforms that make it, so you can find the good ones fast.",
+      "list": []
+    },
+    {
+      "heading": "How listings work",
+      "platform": null,
+      "body": "Every listing is checked before it goes live. We don't list tools that undress or deepfake real people, or any service that allows content involving minors. Where we haven't been able to verify a detail, the listing says so.\n\nSome listings are sponsored or include affiliate links. These are always labelled, and payment never decides an editorial rating.",
+      "list": []
+    }
+  ]
+}

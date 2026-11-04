@@ -1,0 +1,164 @@
+{
+  "name": "Redline Motion",
+  "status": "published",
+  "isSample": true,
+  "websiteUrl": "https://example.com/redline-motion",
+  "shortDescription": "Short looping clips from prompts, with a free daily allowance and no watermark on paid plans.",
+  "primaryCategory": "ai-porn-video-generators",
+  "categories": [
+    "ai-porn-video-generators"
+  ],
+  "platformType": "web",
+  "pricingModel": "freemium",
+  "tags": [
+    "Text-to-video",
+    "Loops",
+    "Free daily credits"
+  ],
+  "bestFor": "",
+  "logo": null,
+  "initials": "Rm",
+  "hue": 8,
+  "dateAdded": "2026-10-04",
+  "lastUpdated": "2026-10-26",
+  "features": [
+    {
+      "key": "free-tier",
+      "label": "",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "no-signup",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "unfiltered",
+      "label": "",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "memory",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "voice",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "native-app",
+      "label": "",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "crypto",
+      "label": "",
+      "value": "yes",
+      "unverified": false
+    }
+  ],
+  "glance": {
+    "price": {
+      "value": "Free · $15/mo",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "freeAccess": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "payment": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "devices": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "account": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "billingName": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "trainingOnChats": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "ageVerification": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "allowedContent": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    },
+    "prohibitedContent": {
+      "value": "",
+      "unverified": false,
+      "checkedOn": null
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04",
+    "checkedBy": "Sample data"
+  },
+  "editorial": {
+    "discriminant": true,
+    "value": {
+      "rating": 8.4,
+      "subScores": [],
+      "basis": "research",
+      "reviewer": "Sample reviewer",
+      "lastChecked": "2026-10-26",
+      "about": "Short looping clips from prompts, with a free daily allowance and no watermark on paid plans. This is a sample listing: real profiles describe the platform in two or three paragraphs.",
+      "pros": [
+        "Text-to-video",
+        "Loops"
+      ],
+      "cons": [
+        "Sample listing: replace with real findings"
+      ],
+      "assessment": "Sample assessment. Real assessments explain who the platform suits, who it doesn't, and why.",
+      "verdict": ""
+    }
+  },
+  "commercial": {
+    "sponsored": false,
+    "sponsoredFrom": null,
+    "sponsoredUntil": null,
+    "editorsPick": false,
+    "featuredOnHome": true,
+    "featuredInCategories": [],
+    "affiliateActive": false,
+    "affiliateUrl": null,
+    "trackingParams": []
+  }
+}

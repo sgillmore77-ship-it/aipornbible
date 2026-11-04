@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AdLabel, PickLabel, PricingTag, RatingPill, SponsoredLabel, Tag, Tile } from "./ui";
-import { categoryName, formatDate, outboundHref, outboundRel } from "@/lib/data";
+import { catLabel, formatDate, outboundHref, outboundRel } from "@/lib/format";
 import { PRICING_LABELS } from "@/lib/labels";
 import type { Platform } from "@/lib/types";
 
@@ -22,7 +22,7 @@ export function PlatformCard({ p, variant = "grid", maxTags = 2, inCategory }: {
   const sponsored = p.commercial.sponsored;
   const pick = p.commercial.editorsPick;
   const rating = p.editorial?.rating;
-  const cat = categoryName(inCategory && p.categories.includes(inCategory) ? inCategory : p.primaryCategory);
+  const cat = catLabel(p, inCategory && p.categories.includes(inCategory) ? inCategory : p.primaryCategory);
 
   if (variant === "mini") {
     return (

@@ -1,0 +1,12 @@
+{
+  "name": "NSFW AI Characters",
+  "status": "published",
+  "order": 50,
+  "short": "Persona libraries and custom character builders.",
+  "intro": "NSFW character platforms are built around personas: appearance, personality, backstory and kinks. Some are mainly creation tools, others are huge libraries of user-made characters you can chat with straight away.\n\nLook at how much control you get over a character, whether their look stays consistent across images, and how good the library is if you'd rather not build your own.",
+  "related": [
+    "ai-sex-chat",
+    "ai-porn-generators",
+    "ai-porn-communities"
+  ]
+}

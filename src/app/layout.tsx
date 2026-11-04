@@ -1,11 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import "./globals.css";
-import { Analytics } from "@vercel/analytics/next";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { JsonLd } from "@/components/ui";
-import { SITE, platformsInCategory, publishedCategories, publishedPlatforms } from "@/lib/data";
-import { buildSearchIndex } from "@/lib/search-index";
+import localFont from "next/font/local";
+import { SITE } from "@/lib/site";
+
+/**
+ * Archivo variable (weight 100–900, width 62–125%), self-hosted and preloaded.
+ * next/font adds a size-matched fallback so the swap to Archivo doesn't shift layout.
+ */
+const archivo = localFont({
+  src: "../fonts/archivo-latin-wdth-normal.woff2",
+  weight: "100 900",
+  style: "normal",
+  display: "swap",
+  variable: "--font-archivo",
+  declarations: [{ prop: "font-stretch", value: "62% 125%" }],
+  adjustFontFallback: "Arial",
+  preload: true,
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -29,38 +39,9 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#FFFFFF" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const cats = publishedCategories().map((c) => ({ slug: c.slug, name: c.name, count: platformsInCategory(c.slug).length }));
   return (
-    <html lang="en" data-theme="light">
-      <body className="min-h-dvh">
-        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-[6px] focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">
-          Skip to content
-        </a>
-        <Header searchIndex={buildSearchIndex()} siteCount={publishedPlatforms().length} categories={cats} />
-        <main id="main">{children}</main>
-        <Footer />
-        <JsonLd
-          data={{
-            "@context": "https://schema.org",
-            "@graph": [
-              { "@type": "Organization", "@id": `${SITE.url}/#org`, name: SITE.name, url: SITE.url, logo: `${SITE.url}/icon.svg` },
-              {
-                "@type": "WebSite",
-                "@id": `${SITE.url}/#website`,
-                name: SITE.name,
-                url: SITE.url,
-                publisher: { "@id": `${SITE.url}/#org` },
-                potentialAction: {
-                  "@type": "SearchAction",
-                  target: `${SITE.url}/directory/?q={search_term_string}`,
-                  "query-input": "required name=search_term_string",
-                },
-              },
-            ],
-          }}
-        />
-        <Analytics />
-      </body>
+    <html lang="en" data-theme="light" className={archivo.variable}>
+      <body className="min-h-dvh">{children}</body>
     </html>
   );
 }
