@@ -1,0 +1,27 @@
+name: Unpack project zip
+on:
+  push:
+    paths: [".github/workflows/unpack.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unzip project into repo root
+        run: |
+          set -e
+          ZIP=$(ls *.zip | head -1)
+          echo "Unpacking $ZIP"
+          mkdir -p /tmp/unz
+          unzip -q "$ZIP" -d /tmp/unz
+          PKG=$(find /tmp/unz -name package.json -not -path "*/node_modules/*" | head -1)
+          SRC=$(dirname "$PKG")
+          echo "Project root inside zip: $SRC"
+          rsync -a --exclude=".git" --exclude="node_modules" --exclude=".next" "$SRC"/ ./
+          git rm -q "$ZIP"
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898283+github-actions[bot]@users.noreply.github.com" commit -m "Unpack project files from zip"
+          git push
