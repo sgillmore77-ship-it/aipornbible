@@ -53,11 +53,20 @@
     }
   },
   "policyCheck": {
-    "noRealPersonNudification": false,
-    "prohibitsMinors": false
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04"
   },
   "editorial": {
-    "discriminant": false
+    "discriminant": true,
+    "value": {
+      "rating": 7.7,
+      "subScores": [],
+      "basis": "research",
+      "lastChecked": "2026-11-04",
+      "pros": [],
+      "cons": []
+    }
   },
   "commercial": {
     "sponsored": false,
