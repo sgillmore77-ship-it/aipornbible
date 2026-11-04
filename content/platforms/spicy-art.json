@@ -1,0 +1,70 @@
+{
+  "name": "Spicy Art",
+  "status": "draft",
+  "isSample": false,
+  "websiteUrl": "https://spicyart.ai/app",
+  "shortDescription": "AI image generation has become one of the more interesting developments in adult entertainment. What once required artists, specialist software or professional production can now be attempted using nothing more than a written description and a few clicks.",
+  "primaryCategory": "ai-porn-generators",
+  "categories": [],
+  "platformType": "web",
+  "pricingModel": "freemium",
+  "tags": [],
+  "logo": "/logos/spicy-art/logo.png",
+  "initials": "SA",
+  "hue": 200,
+  "dateAdded": "2026-11-04",
+  "lastUpdated": "2026-11-04",
+  "features": [],
+  "glance": {
+    "price": {
+      "unverified": false
+    },
+    "freeAccess": {
+      "unverified": false
+    },
+    "payment": {
+      "unverified": false
+    },
+    "devices": {
+      "unverified": false
+    },
+    "account": {
+      "unverified": false
+    },
+    "billingName": {
+      "unverified": false
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "unverified": false
+    },
+    "trainingOnChats": {
+      "unverified": false
+    },
+    "ageVerification": {
+      "unverified": false
+    },
+    "allowedContent": {
+      "unverified": false
+    },
+    "prohibitedContent": {
+      "unverified": false
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": false,
+    "prohibitsMinors": false
+  },
+  "editorial": {
+    "discriminant": false
+  },
+  "commercial": {
+    "sponsored": false,
+    "editorsPick": false,
+    "featuredOnHome": false,
+    "featuredInCategories": [],
+    "affiliateActive": false,
+    "trackingParams": []
+  }
+}
