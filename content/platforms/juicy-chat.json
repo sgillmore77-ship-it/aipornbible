@@ -1,0 +1,123 @@
+{
+  "name": "JuicyChat",
+  "status": "published",
+  "isSample": false,
+  "websiteUrl": "https://www.juicychat.ai/",
+  "shortDescription": "AI Sex Chat With Plenty of Options\n\nFirst impressions are pretty good. Juicy Chat is a polished-looking AI sex chat platform, and it's clear that some effort has gone into the design. ",
+  "primaryCategory": "ai-sex-chat",
+  "categories": [
+    "ai-girlfriends",
+    "ai-sex-chat"
+  ],
+  "platformType": "web",
+  "pricingModel": "credits",
+  "tags": [
+    "Generate Videos",
+    "Generate Images",
+    "NSFW AI roleplay",
+    "Voice interactions"
+  ],
+  "bestFor": "NSFW AI roleplay, Custom AI characters, Fantasy and scenario exploration",
+  "logo": "/logos/juicy-chat/logo.png",
+  "initials": "JC",
+  "hue": 335,
+  "dateAdded": "2026-09-04",
+  "lastUpdated": "2026-10-27",
+  "features": [
+    {
+      "key": "memory",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "voice",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "native-app",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "crypto",
+      "value": "yes",
+      "unverified": false
+    }
+  ],
+  "glance": {
+    "price": {
+      "value": "Credit based",
+      "unverified": false
+    },
+    "freeAccess": {
+      "unverified": false
+    },
+    "payment": {
+      "value": "Card",
+      "unverified": false
+    },
+    "devices": {
+      "unverified": false
+    },
+    "account": {
+      "unverified": false
+    },
+    "billingName": {
+      "unverified": false
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "unverified": false
+    },
+    "trainingOnChats": {
+      "unverified": false
+    },
+    "ageVerification": {
+      "unverified": false
+    },
+    "allowedContent": {
+      "unverified": false
+    },
+    "prohibitedContent": {
+      "unverified": false
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04",
+    "checkedBy": "Sample data"
+  },
+  "editorial": {
+    "discriminant": true,
+    "value": {
+      "rating": 8.2,
+      "subScores": [],
+      "basis": "research",
+      "reviewer": "Sample reviewer",
+      "lastChecked": "2026-10-27",
+      "about": "### About JuicyChat.ai\n\nJuicyChat is an NSFW AI chat platform designed for users who want more than a conventional chatbot experience. The site focuses on AI girlfriend interactions, adult roleplay and custom AI characters, allowing users to create their own virtual companions and explore a wide range of fantasies and scenarios.\n\nUsers can choose from an extensive collection of existing AI characters or build their own, customising everything from personality and appearance to background and behaviour. Conversations are relatively unrestricted, with bots capable of remembering previous interactions, sending images and sharing voice messages.\n\nThe platform also includes AI image and video generation, character creator tools, community-created personas and various premium features. There's a free membership for newcomers, alongside several paid subscription tiers for users wanting access to more of the platform.\n\nOverall, JuicyChat is primarily aimed at people interested in NSFW AI roleplay and virtual relationships, with image and video generation providing additional ways to interact with their chosen characters.",
+      "pros": [
+        "Voice calls",
+        "Selfies"
+      ],
+      "cons": [
+        "Sample listing: replace with real findings"
+      ],
+      "assessment": "JuicyChat is a well-presented and feature-rich AI sex chat platform that does a good job of combining adult roleplay, AI companionship and content generation. Its biggest strength is the flexibility it offers users, particularly when creating custom characters and exploring unrestricted conversations.\n\nThe chatbot experience is generally impressive, although memory can become unreliable during longer conversations. Image generation is decent, but video generation still has some way to go. The biggest drawback is the pricing, especially when you factor in the additional cost of coins and premium features.\n\nThere's plenty to like here, and JuicyChat is worth considering if you're primarily interested in NSFW AI roleplay rather than simply generating adult images. However, the subscription costs make it difficult to recommend to anyone on a tight budget.",
+      "verdict": "Definitely worth a look"
+    }
+  },
+  "commercial": {
+    "sponsored": false,
+    "editorsPick": false,
+    "featuredOnHome": true,
+    "featuredInCategories": [
+      "ai-girlfriends"
+    ],
+    "affiliateActive": false,
+    "trackingParams": []
+  }
+}
