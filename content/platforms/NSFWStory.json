@@ -1,0 +1,131 @@
+{
+  "name": "NSFWStory",
+  "status": "published",
+  "isSample": false,
+  "websiteUrl": "https://nsfwstory.com",
+  "shortDescription": "Curated galleries and an active Discord for AI artists, with weekly prompt challenges.",
+  "primaryCategory": "ai-porn-communities",
+  "categories": [
+    "ai-porn-communities"
+  ],
+  "platformType": "discord",
+  "pricingModel": "free",
+  "tags": [
+    "Galleries",
+    "Discord"
+  ],
+  "logo": "/logos/NSFWStory/logo.png",
+  "initials": "G9",
+  "hue": 140,
+  "dateAdded": "2026-10-23",
+  "lastUpdated": "2026-10-23",
+  "features": [
+    {
+      "key": "free-tier",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "no-signup",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "unfiltered",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "memory",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "voice",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "native-app",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "crypto",
+      "value": "unknown",
+      "unverified": false
+    }
+  ],
+  "glance": {
+    "price": {
+      "value": "Free",
+      "unverified": false
+    },
+    "freeAccess": {
+      "unverified": false
+    },
+    "payment": {
+      "unverified": false
+    },
+    "devices": {
+      "unverified": false
+    },
+    "account": {
+      "unverified": false
+    },
+    "billingName": {
+      "unverified": false
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "unverified": false
+    },
+    "trainingOnChats": {
+      "unverified": false
+    },
+    "ageVerification": {
+      "unverified": false
+    },
+    "allowedContent": {
+      "unverified": false
+    },
+    "prohibitedContent": {
+      "unverified": false
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04",
+    "checkedBy": "BDG"
+  },
+  "editorial": {
+    "discriminant": true,
+    "value": {
+      "rating": 6.9,
+      "subScores": [],
+      "basis": "research",
+      "reviewer": "BDG",
+      "lastChecked": "2026-10-16",
+      "about": "NSFWStory.com is an AI-powered erotica writing platform that turns personal ideas into customised adult stories. Rather than browsing a library of existing material, users can set the characters, scenario, writing style and level of explicitness, then let the AI build the story.\n\nThere are several writing options, including adult fiction, romance, fan fiction and horror. Users can also choose to have their stories narrated using AI-generated voices. A library of community-submitted stories provides some examples of what the platform can produce.\n\nThe main attraction is the degree of creative control. You can start with a simple idea or provide detailed instructions about the characters, setting and plot. It's aimed at people who enjoy reading erotica but would rather have something written around their own interests than search through endless existing stories.\n\nPricing and Privacy\n\nThe platform has offered free access during its beta period, with a credit-based payment model also outlined. One important distinction is that free-generated stories are public, while private stories are reserved for paying users. Check the current terms before submitting anything personal.\n\n",
+      "pros": [
+        "Galleries",
+        "Discord"
+      ],
+      "cons": [
+        "Sample listing: replace with real findings"
+      ],
+      "assessment": "NSFWStory fills a slightly different niche from the usual AI girlfriend and adult image-generation platforms. Its focus is written erotica, with enough customisation to make the experience more personal than simply picking a story from a catalogue. The audio narration is a useful extra, too.\n\nIt's worth exploring if you enjoy adult fiction and want to experiment with creating your own. Just be aware of the public-story setting before getting started.",
+      "verdict": "NSFWStory.com: Create Your Own Adult Fiction"
+    }
+  },
+  "commercial": {
+    "sponsored": false,
+    "editorsPick": false,
+    "featuredOnHome": false,
+    "featuredInCategories": [],
+    "affiliateActive": false,
+    "trackingParams": []
+  }
+}
