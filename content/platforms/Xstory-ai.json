@@ -1,23 +1,23 @@
 {
-  "name": "Candlelight",
+  "name": "XStory",
   "status": "published",
-  "isSample": true,
-  "websiteUrl": "https://example.com/candlelight",
-  "shortDescription": "Build detailed NSFW characters or pick from 40,000+ community personas.",
+  "isSample": false,
+  "websiteUrl": "https://xstory.app/",
+  "shortDescription": "Alongside its library of more than 1,000 templates, it has tools for building multi-scene videos, controlling character poses and creating short stories involving multiple characters.",
   "primaryCategory": "nsfw-ai-characters",
   "categories": [
     "nsfw-ai-characters",
     "ai-sex-chat"
   ],
   "platformType": "web",
-  "pricingModel": "freemium",
+  "pricingModel": "credits",
   "tags": [
     "Character builder",
     "Public library",
     "Images in chat"
   ],
   "bestFor": "Custom characters",
-  "logo": null,
+  "logo": "/logos/Xstory-ai/logo.png",
   "initials": "Cl",
   "hue": 80,
   "dateAdded": "2026-08-05",
@@ -25,43 +25,36 @@
   "features": [
     {
       "key": "free-tier",
-      "label": "",
       "value": "yes",
       "unverified": false
     },
     {
       "key": "no-signup",
-      "label": "",
       "value": "unknown",
       "unverified": false
     },
     {
       "key": "unfiltered",
-      "label": "",
       "value": "yes",
       "unverified": false
     },
     {
       "key": "memory",
-      "label": "",
       "value": "yes",
       "unverified": false
     },
     {
       "key": "voice",
-      "label": "",
       "value": "unknown",
       "unverified": false
     },
     {
       "key": "native-app",
-      "label": "",
       "value": "unknown",
       "unverified": false
     },
     {
       "key": "crypto",
-      "label": "",
       "value": "unknown",
       "unverified": false
     }
@@ -69,67 +62,48 @@
   "glance": {
     "price": {
       "value": "Free · $7.99/mo",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     },
     "freeAccess": {
       "value": "Unlimited, slow queue",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     },
     "payment": {
-      "value": "",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     },
     "devices": {
       "value": "Web, iOS, Android",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     },
     "account": {
-      "value": "",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     },
     "billingName": {
-      "value": "",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     }
   },
   "privacy": {
     "dataRetention": {
-      "value": "",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     },
     "trainingOnChats": {
-      "value": "",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     },
     "ageVerification": {
-      "value": "",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     },
     "allowedContent": {
-      "value": "",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     },
     "prohibitedContent": {
-      "value": "",
-      "unverified": false,
-      "checkedOn": null
+      "unverified": false
     }
   },
   "policyCheck": {
     "noRealPersonNudification": true,
     "prohibitsMinors": true,
     "checkedOn": "2026-11-04",
-    "checkedBy": "Sample data"
+    "checkedBy": "BDG"
   },
   "editorial": {
     "discriminant": true,
@@ -137,9 +111,9 @@
       "rating": 8,
       "subScores": [],
       "basis": "research",
-      "reviewer": "Sample reviewer",
+      "reviewer": "BDG",
       "lastChecked": "2026-10-08",
-      "about": "Build detailed NSFW characters or pick from 40,000+ community personas. This is a sample listing: real profiles describe the platform in two or three paragraphs.",
+      "about": "XStory.app puts a lot of emphasis on video creation, offering several ways to turn prompts and images into personalised adult content. Alongside its library of more than 1,000 templates, it has tools for building multi-scene videos, controlling character poses and creating short stories involving multiple characters.\n\nThe Pose and Micro Drama features are particularly interesting. Rather than simply generating a short clip, they give users more control over the action, characters and overall scene. The prompt-based tools also make it possible to create something more tailored than the usual collection of preset animations.\n\nVideo generation is where XStory makes its strongest impression. There is still room for variation in what AI can produce, but the range of creative options gives it more depth than a basic image generator. New users can also try it with free signup credits.\n\nKey features\n\nAI-generated adult video and image content\n\nMore than 1,000 adult templates\n\nCustom video creation using prompts and images\n\nPose and multi-character story modes\n\nFree credits for new users",
       "pros": [
         "Character builder",
         "Public library"
@@ -147,19 +121,16 @@
       "cons": [
         "Sample listing: replace with real findings"
       ],
-      "assessment": "Sample assessment. Real assessments explain who the platform suits, who it doesn't, and why.",
-      "verdict": ""
+      "assessment": "Great new site, worth checking out",
+      "verdict": "Great addition to the industry"
     }
   },
   "commercial": {
     "sponsored": false,
-    "sponsoredFrom": null,
-    "sponsoredUntil": null,
     "editorsPick": true,
     "featuredOnHome": false,
     "featuredInCategories": [],
     "affiliateActive": false,
-    "affiliateUrl": null,
     "trackingParams": []
   }
 }
