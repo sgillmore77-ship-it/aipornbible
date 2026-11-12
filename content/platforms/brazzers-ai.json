@@ -1,0 +1,133 @@
+{
+  "name": "Brazzers AI",
+  "status": "published",
+  "isSample": false,
+  "websiteUrl": "https://www.brazzers.ai/",
+  "shortDescription": "Brazzers have launched into the AI market with quite a splash. There are currently around 50 AI girlfriends to choose from. They're fictional characters rather than digital recreations of established Brazzers performers, which might disappoint anyone hoping to interact with familiar faces.",
+  "primaryCategory": "ai-sex-chat",
+  "categories": [
+    "ai-sex-chat"
+  ],
+  "platformType": "web",
+  "pricingModel": "credits",
+  "tags": [
+    "Group scenes",
+    "Story mode"
+  ],
+  "bestFor": "Story-driven scenes",
+  "initials": "Vc",
+  "hue": 320,
+  "dateAdded": "2026-08-30",
+  "lastUpdated": "2026-10-17",
+  "features": [
+    {
+      "key": "free-tier",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "no-signup",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "unfiltered",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "memory",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "voice",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "native-app",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "crypto",
+      "value": "unknown",
+      "unverified": false
+    }
+  ],
+  "glance": {
+    "price": {
+      "value": "$9.99/mo",
+      "unverified": false
+    },
+    "freeAccess": {
+      "value": "3-day trial",
+      "unverified": false
+    },
+    "payment": {
+      "unverified": false
+    },
+    "devices": {
+      "value": "Web, Android",
+      "unverified": false
+    },
+    "account": {
+      "unverified": false
+    },
+    "billingName": {
+      "unverified": false
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "unverified": false
+    },
+    "trainingOnChats": {
+      "unverified": false
+    },
+    "ageVerification": {
+      "unverified": false
+    },
+    "allowedContent": {
+      "unverified": false
+    },
+    "prohibitedContent": {
+      "unverified": false
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04",
+    "checkedBy": "BDG"
+  },
+  "editorial": {
+    "discriminant": true,
+    "value": {
+      "rating": 7.7,
+      "subScores": [],
+      "basis": "research",
+      "reviewer": "BDG",
+      "lastChecked": "2026-10-17",
+      "about": "Brazzers is one of those adult entertainment brands that needs very little introduction. So its move into AI-generated adult content was probably only a matter of time.\n\nBrazzers.ai combines AI girlfriend chat, adult roleplay and personalised image and video generation in one platform. Rather than simply browsing a collection of adult content, users can interact with fictional characters and generate their own material.\n\nThe platform currently features around 50 AI girlfriends, with different appearances and personalities. The conversations are engaging, and the characters are generally good at responding to different scenarios without making everything feel overly scripted.\n\nImage generation is another attraction, allowing users to create personalised content featuring their chosen characters. Video generation is also available, although reliability could be better. Results can be impressive, but failed generations and inconsistent outputs are something you'll encounter.\n\nThe membership structure is slightly unusual, with different subscriptions unlocking different groups of characters. There's a free seven-day trial without requiring payment details, while paid plans start at just under $10 per month. Premium membership costs $100 monthly, which is considerably more than many competing services.\n\nOverall, Brazzers.ai is an interesting addition to the AI adult entertainment market. The established branding will undoubtedly attract attention, but there's enough substance behind the name to make it worth investigating. Some features need further development, and the higher subscription tiers are expensive, but there's potential here.",
+      "pros": [
+        "Group scenes",
+        "Story mode"
+      ],
+      "cons": [],
+      "assessment": "A promising AI adult platform from one of the industry's biggest names. Worth exploring during the free trial, although I'd hold off on the expensive Premium subscription for now.",
+      "verdict": "Worth exploring"
+    }
+  },
+  "commercial": {
+    "sponsored": false,
+    "editorsPick": true,
+    "featuredOnHome": true,
+    "featuredInCategories": [
+      "ai-sex-chat"
+    ],
+    "affiliateActive": false,
+    "trackingParams": []
+  }
+}
