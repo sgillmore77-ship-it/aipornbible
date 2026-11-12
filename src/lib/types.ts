@@ -36,8 +36,8 @@ export interface Category {
   name: string;
   /** One line, used on cards and boxes. */
   short: string;
-  /** Original introductory copy for the category page (paragraphs). */
-  intro: string[];
+  /** Original introductory copy for the category page (formatted text). */
+  intro: string;
   related: string[];
   status: ContentStatus;
 }
@@ -110,10 +110,12 @@ export interface Platform {
     basis: "hands-on" | "research";
     reviewer: string;
     lastChecked: string;
-    about: string[];
+    /** Formatted text (headings, lists, bold, links). */
+    about: string;
     pros: string[];
     cons: string[];
-    assessment: string[];
+    /** Formatted text. */
+    assessment: string;
     verdict?: string;
   };
 
@@ -138,7 +140,8 @@ export interface ArticleSection {
   heading: string;
   /** Shows an inline platform summary card before the section body. */
   platform?: string;
-  body: string[];
+  /** Formatted text. */
+  body: string;
   /** Numbered list items. */
   list?: { title: string; body: string }[];
 }

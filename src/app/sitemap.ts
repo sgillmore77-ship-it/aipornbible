@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: u("/"), changeFrequency: "daily", priority: 1, lastModified: latest(plats.map((p) => p.lastUpdated)) },
     { url: u("/directory/"), changeFrequency: "daily", priority: 0.9 },
-    { url: u("/categories/"), changeFrequency: "weekly", priority: 0.7 },
     ...publishedCategories().filter((c) => isIndexableCategory(c.slug)).map((c) => ({ url: u(`/category/${c.slug}/`), changeFrequency: "weekly" as const, priority: 0.8 })),
     ...plats.map((p) => ({ url: u(`/platform/${p.slug}/`), lastModified: p.lastUpdated, changeFrequency: "weekly" as const, priority: 0.7 })),
     ...(["review", "comparison", "guide", "news"] as const)

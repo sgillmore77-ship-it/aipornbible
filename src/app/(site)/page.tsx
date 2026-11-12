@@ -65,7 +65,7 @@ export default function Home() {
       {/* Browse by category */}
       <Container>
         <section className="pb-7 pt-2 lg:pb-16">
-          <SectionHead title="Browse by category" caption={<span className="hidden lg:inline">Top-rated sites in each, ranked by our score</span>} href="/categories/" linkLabel="All categories" />
+          <SectionHead title="Browse by category" caption={<span className="hidden lg:inline">Top-rated sites in each, ranked by our score</span>} href="/directory/" linkLabel="Full directory" />
           <div className="grid gap-2.5 lg:grid-cols-3 lg:gap-4">
             {cats.map((c) => {
               const list = platformsInCategory(c.slug).sort(boxRank);

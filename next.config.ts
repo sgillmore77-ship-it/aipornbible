@@ -18,7 +18,8 @@ function outboundRedirects() {
       const p: any = JSON.parse(readFileSync(join(dir, f), "utf8"));
       if (p.status !== "published") return [];
       const c = p.commercial ?? {};
-      let target: string = c.affiliateActive && c.affiliateUrl ? c.affiliateUrl : p.websiteUrl;
+      let target: string = String((c.affiliateActive && c.affiliateUrl ? c.affiliateUrl : p.websiteUrl) ?? "").trim();
+      if (target && !/^[a-z][a-z0-9+.-]*:\/\//i.test(target)) target = `https://${target.replace(/^\/+/, "")}`;
       try {
         const u = new URL(target);
         for (const t of c.trackingParams ?? []) if (t?.key) u.searchParams.set(t.key, t.value ?? "");
@@ -35,6 +36,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   async redirects() {
     return [
+      // The old category overview page; categories now live in the main menu.
+      { source: "/categories", destination: "/directory/", permanent: true },
       ...outboundRedirects(),
       // Unknown or removed platform: send people to the directory instead of a 404.
       { source: "/go/:path*", destination: "/directory/", permanent: false },

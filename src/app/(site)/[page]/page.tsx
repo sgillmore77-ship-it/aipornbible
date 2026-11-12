@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, Container } from "@/components/ui";
 import { getPage, pages } from "@/lib/content";
+import { Markdown } from "@/components/Markdown";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => pages.map((p) => ({ page: p.slug }));
@@ -28,7 +29,7 @@ export default async function StaticPage({ params }: Props) {
           {p.sections.map((s, i) => (
             <section key={i}>
               {s.heading && <h2 id={slugify(s.heading)}>{s.heading}</h2>}
-              {s.body.map((b, j) => <p key={j}>{b}</p>)}
+              {s.body && <div className="mt-[1.1rem]"><Markdown text={s.body} /></div>}
             </section>
           ))}
         </div>

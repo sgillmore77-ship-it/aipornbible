@@ -14,7 +14,7 @@ const cloudProject = process.env.NEXT_PUBLIC_KEYSTATIC_CLOUD_PROJECT;
 
 const STATUS = fields.select({
   label: "Status",
-  description: "Only Published content appears on the site.",
+  description: "Only Published content appears on the site. A Published item missing something essential is held back until fixed, without blocking anything else.",
   options: [
     { label: "Draft", value: "draft" },
     { label: "Published", value: "published" },
@@ -23,7 +23,8 @@ const STATUS = fields.select({
   defaultValue: "draft",
 });
 
-const paragraphs = (label: string, description = "Separate paragraphs with a blank line.") =>
+const FORMATTING = "Formatting: blank line between paragraphs · ## Heading · - bullet · 1. numbered · **bold** · [link text](https://…)";
+const paragraphs = (label: string, description = FORMATTING) =>
   fields.text({ label, multiline: true, description });
 
 const optionalDate = (label: string, description?: string) =>
@@ -77,10 +78,10 @@ export default config({
         status: STATUS,
         isSample: fields.checkbox({ label: "Sample listing", description: "Sample listings show a banner and are hidden from Google. Untick for real platforms." }),
 
-        websiteUrl: fields.url({ label: "Website URL", validation: { isRequired: true } }),
+        websiteUrl: fields.text({ label: "Website URL", description: "e.g. https://example.com (https:// is added if you leave it off).", validation: { isRequired: true } }),
         shortDescription: fields.text({
           label: "Short description",
-          description: "One or two sentences shown on cards (at least 40 characters).",
+          description: "One or two sentences shown on cards and in Google. Put the full review in “About” below.",
           multiline: true,
           validation: { isRequired: true, length: { min: 40 } },
         }),
@@ -107,7 +108,7 @@ export default config({
           ],
           defaultValue: "freemium",
         }),
-        tags: fields.array(fields.text({ label: "Tag" }), { label: "Card tags", description: "2–3 short phrases shown on cards, e.g. “Long memory”.", itemLabel: (p) => p.value || "Tag" }),
+        tags: fields.array(fields.text({ label: "Tag" }), { label: "Card tags", description: "2–3 short phrases shown on cards, e.g. “Long memory”. Recommended.", itemLabel: (p) => p.value || "Tag" }),
         bestFor: fields.text({ label: "Best for", description: "Short phrase for comparison tables, e.g. “Long-form roleplay”." }),
 
         logo: fields.image({ label: "Logo", description: "Square image. Without one, a coloured monogram is shown.", directory: "public/logos", publicPath: "/logos/" }),
@@ -176,7 +177,7 @@ export default config({
             checkedOn: optionalDate("Checked on"),
             checkedBy: fields.text({ label: "Checked by" }),
           },
-          { label: "Content policy check", description: "Required before publishing. The site won't build if a published listing fails this." },
+          { label: "Content policy check", description: "Required. A published listing without both boxes ticked is held back from the site." },
         ),
 
         editorial: fields.conditional(
@@ -217,7 +218,7 @@ export default config({
             featuredOnHome: fields.checkbox({ label: "Show in homepage Featured row" }),
             featuredInCategories: fields.multiRelationship({ label: "Featured at the top of these categories", collection: "categories" }),
             affiliateActive: fields.checkbox({ label: "Affiliate link active" }),
-            affiliateUrl: fields.url({ label: "Affiliate URL", validation: { isRequired: false } }),
+            affiliateUrl: fields.text({ label: "Affiliate URL", description: "Your tracking link from the affiliate programme." }),
             trackingParams: fields.array(
               fields.object({ key: fields.text({ label: "Parameter" }), value: fields.text({ label: "Value" }) }, { layout: [6, 6] }),
               { label: "Tracking parameters", description: "Added to the outbound URL, e.g. utm_source = aipornbible.", itemLabel: (p) => `${p.fields.key.value}=${p.fields.value.value}` },
@@ -242,7 +243,7 @@ export default config({
         status: STATUS,
         order: fields.integer({ label: "Display order", description: "Lower numbers appear first.", defaultValue: 10 }),
         short: fields.text({ label: "Short description", description: "One line shown on category boxes.", validation: { isRequired: true } }),
-        intro: paragraphs("Introduction", "Original copy for the category page (at least 200 characters). Separate paragraphs with a blank line. Mentions of other category names become links automatically."),
+        intro: paragraphs("Introduction", `Original copy for the category page (at least 200 characters). Mentions of other category names become links automatically. ${FORMATTING}`),
         related: fields.multiRelationship({ label: "Related categories", collection: "categories" }),
       },
     }),

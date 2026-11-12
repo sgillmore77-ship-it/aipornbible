@@ -101,3 +101,24 @@ input::placeholder { color: var(--ink3); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+/* Formatted text from the dashboard (headings, lists, bold, links) */
+.md > * + * { margin-top: 1em; }
+.md p { text-wrap: pretty; }
+.md h3 { font-weight: 900; font-stretch: 80%; text-transform: uppercase; letter-spacing: -0.01em; font-size: 22px; line-height: 1.1; color: var(--ink); margin-top: 1.8em; }
+.md h4 { font-weight: 800; font-size: 18px; line-height: 1.3; color: var(--ink); margin-top: 1.5em; }
+.md h3:first-child, .md h4:first-child { margin-top: 0; }
+.md ul { list-style: disc; padding-left: 1.3em; }
+.md ol { list-style: decimal; padding-left: 1.4em; }
+.md li + li { margin-top: 0.35em; }
+.md li::marker { color: var(--red); }
+.md strong { font-weight: 700; color: var(--ink); }
+.md a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+.md a:hover { color: var(--ink); }
+.md blockquote { border-left: 3px solid var(--red); padding-left: 1em; color: var(--ink); font-weight: 600; }
+.md hr { border: 0; border-top: 1px solid var(--rule); margin: 2em 0; }
+.md code { font-size: 0.9em; background: var(--paper2); padding: 0.1em 0.35em; border-radius: 4px; }
+@media (min-width: 1024px) { .md h3 { font-size: 26px; } }
+.article-body .md p { font-size: 18px; line-height: 1.7; color: var(--ink2); margin-top: 0; }
+.article-body .md > * + * { margin-top: 1.1rem; }
+.article-body .md li { font-size: 18px; line-height: 1.6; color: var(--ink2); }

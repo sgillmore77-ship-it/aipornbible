@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PlatformCard, VisitLink } from "./PlatformCard";
 import { Toc } from "./Toc";
+import { Markdown } from "./Markdown";
 import { Breadcrumbs, Container, JsonLd, PricingTag, SampleNotice, SponsoredLabel, Tag, Tile, TypeTag } from "./ui";
 import { getCategory } from "@/lib/content";
 import { SITE, articlePath, categoryName, formatDate, getArticle, getPlatform, outboundHref, outboundRel, publishedArticles, readMinutes } from "@/lib/data";
@@ -268,7 +269,7 @@ export function ArticlePage({ kind, slug }: { kind: ArticleKind; slug: string })
               <section key={sec.heading}>
                 <h2 id={slugify(sec.heading)}>{sec.heading}</h2>
                 {p && <InlinePlatform p={p} />}
-                {sec.body.map((b, i) => <p key={i}>{b}</p>)}
+                {sec.body && <div className="mt-[1.1rem]"><Markdown text={sec.body} /></div>}
                 {sec.list && (
                   <ol className="mt-5 space-y-4">
                     {sec.list.map((li, i) => (

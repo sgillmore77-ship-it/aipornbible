@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, Container, FactValue, FeatureIcon, PickLabel, SampleNotice, SponsoredLabel, Tile, UnverifiedTag } from "@/components/ui";
 import { PlatformCard, VisitLink } from "@/components/PlatformCard";
+import { Markdown } from "@/components/Markdown";
 import { getCategory } from "@/lib/content";
 import {
   boxRank, categoryName, comparisonForCategory, articlePath, formatDate, formatMonth, getPlatform,
@@ -167,7 +168,7 @@ export default async function PlatformPage({ params }: Props) {
             {e?.about && (
               <section>
                 <h2 className="display display-80 text-[28px] lg:text-[34px]">About {p.name}</h2>
-                <div className="mt-4 space-y-4 text-[16px] leading-[1.7] text-ink2 lg:text-[17.5px]">{e.about.map((t, i) => <p key={i}>{t}</p>)}</div>
+                <Markdown text={e.about} className="mt-4 text-[16px] leading-[1.7] text-ink2 lg:text-[17.5px]" />
               </section>
             )}
 
@@ -205,10 +206,10 @@ export default async function PlatformPage({ params }: Props) {
               </section>
             )}
 
-            {e && (
+            {e && (e.assessment || e.verdict) && (
               <section>
                 <h2 className="display display-80 text-[28px] lg:text-[34px]">Our assessment</h2>
-                <div className="mt-4 space-y-4 text-[16px] leading-[1.7] text-ink2 lg:text-[17.5px]">{e.assessment.map((t, i) => <p key={i}>{t}</p>)}</div>
+                <Markdown text={e.assessment} className="mt-4 text-[16px] leading-[1.7] text-ink2 lg:text-[17.5px]" />
                 {e.verdict && (
                   <blockquote className="mt-6 rounded-[10px] border border-rule bg-paper2 px-6 py-5 text-[19px] font-bold leading-[1.4] lg:text-[22px]">
                     “{e.verdict}”

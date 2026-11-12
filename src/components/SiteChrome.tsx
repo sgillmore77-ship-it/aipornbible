@@ -7,7 +7,7 @@ import { buildSearchIndex } from "@/lib/search-index";
 
 /** Header, footer, analytics and site-wide structured data for every public page. */
 export function SiteChrome({ children }: { children: React.ReactNode }) {
-  const cats = publishedCategories().map((c) => ({ slug: c.slug, name: c.name, count: platformsInCategory(c.slug).length }));
+  const cats = publishedCategories().map((c) => ({ slug: c.slug, name: c.name, short: c.short, count: platformsInCategory(c.slug).length }));
   return (
     <>
       <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-[6px] focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">

@@ -5,6 +5,7 @@ import { Breadcrumbs, Container, TypeTag } from "@/components/ui";
 import { PlatformCard } from "@/components/PlatformCard";
 import { DirectoryBrowser } from "@/components/DirectoryBrowser";
 import { ReadMore } from "@/components/ReadMore";
+import { markdownBlocks } from "@/lib/markdown";
 import { getCategory, categories as allCats } from "@/lib/content";
 import {
   articlePath, articlesForCategory, byRating, comparisonForCategory, formatDate, hasFeature,
@@ -28,14 +29,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-/** Turns mentions of other category names in intro copy into links. */
-function linkify(text: string, self: string): React.ReactNode[] {
-  const others = allCats.filter((c) => c.slug !== self).sort((a, b) => b.name.length - a.name.length);
-  const re = new RegExp(`(${others.map((c) => c.name.replace(/[.*+?^${}()|[\]\\&]/g, "\\$&")).join("|")})`, "g");
-  return text.split(re).map((part, i) => {
-    const c = others.find((o) => o.name === part);
-    return c ? <Link key={i} href={`/category/${c.slug}/`} className="font-semibold text-red underline underline-offset-2">{part}</Link> : part;
-  });
+/** Links the first mention of each other category's name in the intro. */
+function linkify(text: string, self: string): string {
+  let out = text;
+  for (const c of [...allCats].filter((c) => c.slug !== self).sort((a, b) => b.name.length - a.name.length)) {
+    if (out.includes(`/category/${c.slug}/`)) continue;
+    const re = new RegExp(`(^|[^\\[\\w])(${c.name.replace(/[.*+?^${}()|[\]\\&]/g, "\\$&")})(?![\\w\\]])`);
+    out = out.replace(re, `$1[$2](/category/${c.slug}/)`);
+  }
+  return out;
 }
 
 export default async function CategoryPage({ params }: Props) {
@@ -61,7 +63,7 @@ export default async function CategoryPage({ params }: Props) {
           </p>
           <ReadMore
             className="mt-4 max-w-[700px] space-y-4 text-[16px] leading-[1.65] text-ink2 lg:text-[18px]"
-            paragraphs={c.intro.map((t, i) => <p key={i}>{linkify(t, c.slug)}</p>)}
+            paragraphs={markdownBlocks(linkify(c.intro, c.slug)).map((html, i) => <div key={i} className="md" dangerouslySetInnerHTML={{ __html: html }} />)}
           />
         </div>
 

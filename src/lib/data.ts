@@ -55,7 +55,7 @@ export const articlePath = (a: Article) => {
 };
 
 export const readMinutes = (a: Article) => {
-  const words = a.sections.flatMap((s) => [s.heading, ...s.body, ...(s.list ?? []).map((l) => l.title + " " + l.body)]).join(" ").split(/\s+/).length;
+  const words = a.sections.flatMap((s) => [s.heading, s.body, ...(s.list ?? []).map((l) => l.title + " " + l.body)]).join(" ").split(/\s+/).length;
   return Math.max(2, Math.round(words / 220));
 };
 
