@@ -1,6 +1,6 @@
 name: Deploy uploaded zip
 # Upload a project zip to the repo root; this unpacks it over the repo
-# (removing files that are no longer in the zip) and commits, which triggers Vercel.
+# (code only: content/ and public/logos/ belong to the dashboard and are never touched) and commits, which triggers Vercel.
 on:
   push:
     paths: ["**.zip"]
@@ -23,7 +23,7 @@ jobs:
           PKG=$(find /tmp/unz -name package.json -not -path "*/node_modules/*" -printf "%d %p\n" | sort -n | head -1 | cut -d" " -f2)
           SRC=$(dirname "$PKG")
           echo "Project root inside zip: $SRC"
-          rsync -a --delete --exclude=".git" --exclude=".github" --exclude="node_modules" --exclude=".next" "$SRC"/ ./
+          rsync -a --delete --exclude=".git" --exclude=".github" --exclude="node_modules" --exclude=".next" --exclude="/content/" --exclude="/public/logos/" "$SRC"/ ./
           git add -A
           if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
           git -c user.name="github-actions[bot]" -c user.email="41898283+github-actions[bot]@users.noreply.github.com" commit -m "Deploy project files from $ZIP"
