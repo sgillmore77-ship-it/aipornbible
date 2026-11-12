@@ -1,0 +1,127 @@
+{
+  "name": "Faptoher",
+  "status": "published",
+  "isSample": false,
+  "websiteUrl": "Faptoher.com",
+  "shortDescription": "Faptoher.com is an AI image and video generator built around a simple idea: choose a fictional character, select a preset scenario and let the platform create adult-themed content.",
+  "primaryCategory": "ai-sex-voice-audio",
+  "categories": [
+    "ai-sex-voice-audio",
+    "ai-girlfriends"
+  ],
+  "platformType": "mobile",
+  "pricingModel": "subscription",
+  "tags": [
+    "ASMR",
+    "Audio stories"
+  ],
+  "logo": "/logos/faptoher/logo.png",
+  "initials": "FTH",
+  "hue": 185,
+  "dateAdded": "2026-11-01",
+  "lastUpdated": "2026-11-02",
+  "features": [
+    {
+      "key": "free-tier",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "no-signup",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "unfiltered",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "memory",
+      "value": "unknown",
+      "unverified": false
+    },
+    {
+      "key": "voice",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "native-app",
+      "value": "yes",
+      "unverified": false
+    },
+    {
+      "key": "crypto",
+      "value": "unknown",
+      "unverified": false
+    }
+  ],
+  "glance": {
+    "price": {
+      "value": "$8.99/mo",
+      "unverified": false
+    },
+    "freeAccess": {
+      "unverified": false
+    },
+    "payment": {
+      "unverified": false
+    },
+    "devices": {
+      "unverified": false
+    },
+    "account": {
+      "unverified": false
+    },
+    "billingName": {
+      "unverified": false
+    }
+  },
+  "privacy": {
+    "dataRetention": {
+      "unverified": false
+    },
+    "trainingOnChats": {
+      "unverified": false
+    },
+    "ageVerification": {
+      "unverified": false
+    },
+    "allowedContent": {
+      "unverified": false
+    },
+    "prohibitedContent": {
+      "unverified": false
+    }
+  },
+  "policyCheck": {
+    "noRealPersonNudification": true,
+    "prohibitsMinors": true,
+    "checkedOn": "2026-11-04",
+    "checkedBy": "BDG"
+  },
+  "editorial": {
+    "discriminant": true,
+    "value": {
+      "rating": 8,
+      "subScores": [],
+      "basis": "research",
+      "reviewer": "BDG",
+      "lastChecked": "2026-11-12",
+      "about": "Faptoher.com is an AI image and video generator built around a simple idea: choose a fictional character, select a preset scenario and let the platform create adult-themed content. Rather than requiring users to master complicated prompts or image-generation settings, it offers a collection of ready-made templates covering a range of popular adult categories.\n\nHow Does It Work?\n\nThe platform is designed to be accessible, particularly for people who haven't used AI adult generators before. Users can browse its character gallery, choose a template and spend credits generating images or short video clips.\n\nThe preset approach makes getting started relatively easy, although it offers less creative control than platforms built around detailed prompting and customisation. Video generation is a key part of the offering, with short clips adding movement and character interaction to the results.\n\nDesign and Usability\n\nFaptoher keeps things fairly simple, with the homepage focused largely on its character selection and generation templates. The layout appears better suited to mobile devices, however, and the desktop experience could do with some refinement.\n\nThe branding is another area worth reconsidering. Its visual identity is rather close to that of a much better-known adult website, making it harder for the platform to establish its own identity.",
+      "pros": [],
+      "cons": [],
+      "assessment": "Faptoher's biggest strength is accessibility. The template-based system removes much of the guesswork involved in AI content creation, making it a reasonable starting point for newcomers. The combination of fictional characters, preset scenarios and video generation gives users plenty to experiment with.\n\nThe trade-off is flexibility. More experienced users may find the reliance on predefined options restrictive, while the desktop presentation could be improved. Overall, it's a relatively straightforward entry into AI adult content generation, rather than a sophisticated creative suite.",
+      "verdict": "Straightforward AI Adult Content Creation"
+    }
+  },
+  "commercial": {
+    "sponsored": false,
+    "editorsPick": false,
+    "featuredOnHome": false,
+    "featuredInCategories": [],
+    "affiliateActive": false,
+    "trackingParams": []
+  }
+}
